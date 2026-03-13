@@ -21,7 +21,6 @@ class DynamicIntArray:
 
     def append(self, value):
         if self.size == self.capacity:
-            # Dobra a capacidade (estratégia comum)
             new_capacity = self.capacity * 2
             self._resize(new_capacity)
         
